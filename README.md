@@ -11,8 +11,9 @@ I've included some initial typography scheme code in the CSS file. But, file fre
 ## Team Directions
 
 1. Sketch a wireframe on your whiteboard.
-2. Annotate the grid HTML
-3. Implement your design approach in your respectively named folder
+2. Annotate the layout-related HTML.
+3. Take a picture of your wireframe, and add it to your respective `images` folder.
+4. Implement your design approach in your respectively named folder
   - Verticality
   - Overlap
   - Whitespace
