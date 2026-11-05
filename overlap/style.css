@@ -11,13 +11,13 @@ html,body {
 h1,h2,h3 { font-family: 'Bungee', cursive; }
 
 h1 {
-  font-size: 14vw;
-  font-size: clamp(2em,14vw,25vw);
+  font-size: 10vw;
+  font-size: clamp(2em,5vw,5vw);
   letter-spacing: 5px;
   text-transform: uppercase;
   overflow-wrap: break-word;
   hyphens: manual;
-  color: white;
+  color: rgb(3, 3, 3);
 }
 
 h2 {
