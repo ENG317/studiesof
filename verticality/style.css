@@ -5,13 +5,14 @@ html,
 body {
   margin: 0;
   padding: 0;
+  background-color: antiquewhite;
 }
 
 /* TYPOGRAPHY */
 
 .grid {
   display: grid;
-  grid-template-columns: 47vw 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 .text_heading {
@@ -20,20 +21,94 @@ body {
   grid-row: 1/2;
 }
 
-.checkerboard {
+.black1 {
+  grid-column: 3/4;
+  grid-row: 1/2;
+  background-color: black;
+}
+
+.black2 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  background-color: black;
+}
+
+.black3 {
+  grid-column: 4/5;
+  grid-row: 2/3;
+  background-color: black;
+}
+
+.black4 {
   grid-column: 1/2;
+  grid-row: 3/4;
+  background-color: black;
+}
+
+.black5 {
+  grid-column: 3/4;
+  grid-row: 3/4;
+  background-color: black;
+}
+
+.black6 {
+  grid-column: 2/3;
+  grid-row: 4/5;
+  background-color: black;
+}
+
+.black7 {
+  grid-column: 4/5;
+  grid-row: 4/5;
+  background-color: black;
+}
+
+.black8 {
+  grid-column: 1/2;
+  grid-row: 5/6;
+  background-color: black;
+}
+
+.black9 {
+  grid-column: 3/4;
+  grid-row: 5/6;
+  background-color: black;
+}
+
+.checkerboard {
+  grid-column: 3/4;
+  grid-row: 4/5;
+}
+
+/* .black .second {
+  grid-column: 2/3;
+  grid-row: 2/3;
+} */
+.last_para {
+  grid-column: 2/3;
+  grid-row: 5/6;
+}
+
+.second_col {
+  grid-column: 3/4;
   grid-row: 2/3;
 }
 
-.first_para {
-  grid-column: 2/3;
+.third_col {
+  grid-column: 4/5;
+  grid-row: 3/4;
+}
+
+/* .black {
+  background-color: black;
+  grid-column: 3/4;
   grid-row: 1/2;
 }
 
-.right_col {
-  grid-column: 2/4;
-  grid-row: 2/6;
-}
+.white {
+  grid-column: 2/3;
+  grid-row: 1/2;
+} */
 
 /* OLD FORMATTINg*/
 
