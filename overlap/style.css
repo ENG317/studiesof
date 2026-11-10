@@ -6,6 +6,27 @@ html,body {
   padding: 0;
 }
 
+/* grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  gap: .7rem;
+}
+
+#image-one {
+  & img {
+    width: 100%;
+    height: auto;
+  }
+  grid-column: 2 / 6;
+  grid-row: 1 / 2;
+}
+
+#content-one {
+  grid-column: 7 / 11;
+  grid-row: 1 / 2;
+}
 /* TYPOGRAPHY */
 
 h1,h2,h3 { font-family: 'Bungee', cursive; }
