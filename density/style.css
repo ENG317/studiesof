@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Sono:wght@200;300;400;500;600;700;800&display=swap');
 
 html,body {
-  margin:0;
+  margin:1px;
   padding: 0;
 }
 
@@ -17,7 +17,7 @@ h1 {
   text-transform: uppercase;
   overflow-wrap: break-word;
   hyphens: manual;
-  color: white;
+  color: black;
 }
 
 h2 {
@@ -38,4 +38,37 @@ p {
   font-size: clamp(1.2rem, 1.5rem, 2rem);
 }
 
-/* Gride needs about 12 columns 9 rows lines /*
+/*Define grid area keywords */
+.one { grid-area: a1; }
+.two { grid-area: a2; }
+.three { grid-area: a3; }
+.four { grid-area: a4; }
+.five { grid-area: a5; }
+.six { grid-area: a6; }
+.seven { grid-area: a7; }
+.eight { grid-area: a8; }
+.nine { grid-area: a9; }
+.ten { grid-area: a10; }
+.eleven { grid-area: a11; }
+.twelve { grid-area: a12; }
+.thirteen { grid-area: a13; }
+.fourteen { grid-area: a14; }
+.fifteen { grid-area: a15; }
+.sixteen { grid-area: a16; }
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(2, 50px) repeat(4, 300px) repeat(2, 50px);
+  grid-template-rows: repeat(6, 3fr);
+  grid-gap: 0px;
+  grid-template-areas:
+  ". . . . . . . ."
+  ". . a1 a2 a3 a4 . ."
+  ". . a5 a6 a7 a8 . ."
+  ". . a9 a10 a11 a12 . ."
+  ". . a13 a14 a15 a16 . ."
+  ". . . . . . . ."
+  ;
+}
+
+/* Grid needs about 12 columns 9 rows lines /*
