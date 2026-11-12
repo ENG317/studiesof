@@ -54,7 +54,6 @@ body {
   grid-column: 1 / 2;
   grid-row: 2 / 2;
   background-color: #770e0e;
-  color: #ffffff;
   padding: 1rem 1rem;
   border: 2px solid #1f2531;
   border-radius: 10px;
@@ -62,6 +61,11 @@ body {
   align-self: start;
   font-size: 40px;
   box-shadow: 10px 10px 10px #1f2531;
+
+  & a {
+    color: white;
+    text-decoration: none;
+  }
 }
 
 /* Black Checkers */
