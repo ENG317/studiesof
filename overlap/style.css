@@ -1,20 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Sono:wght@200;300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sono:wght@200;300;400;500;600;700;800&display=swap");
 
-html,body {
-  margin:0;
+html,
+body {
+  margin: 0;
   padding: 0;
+}
+
+html,
+header {
+  text-align: center;
+}
+
+/* Background grid */
+body {
+  background-color: #ffffff;
+  background-image:
+    linear-gradient(to right, #1f253114 1px, transparent 1px),
+    linear-gradient(to bottom, #1f253114 1px, transparent 1px);
+  background-size: 40px 40px;
 }
 
 /* grid */
 .grid {
   display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: repeat(10, 1fr);
-  gap: .7rem;
+  grid-template-columns: repeat(10, 0.5fr);
+  grid-template-rows: repeat(10, 0.5fr);
+  gap: 0.7rem;
 }
 
-#image-one {
+/* the actual stuff */
+.image-one {
   & img {
     width: 100%;
     height: auto;
@@ -23,17 +39,129 @@ html,body {
   grid-row: 1 / 2;
 }
 
-#content-one {
-  grid-column: 7 / 11;
+.content-one {
+  grid-column: 7 / 10;
+  grid-row: 1 / 2;
+  align-self: center;
+  color: #ffffff;
+  background-color: #121f27;
+  text-align: center;
+  padding: 1.25rem 1.5rem;
+  border-radius: 15px;
+}
+
+#join-button {
+  grid-column: 1 / 2;
+  grid-row: 2 / 2;
+  background-color: #770e0e;
+  color: #ffffff;
+  padding: 1rem 1rem;
+  border: 2px solid #1f2531;
+  border-radius: 10px;
+  text-align: center;
+  align-self: start;
+  font-size: 40px;
+  box-shadow: 10px 10px 10px #1f2531;
+}
+
+/* Black Checkers */
+.checker-black-1 {
+  width: 50%;
+  height: auto;
+  grid-column: 1 / 2;
   grid-row: 1 / 2;
 }
-/* TYPOGRAPHY */
+.checker-black-2 {
+  width: 30%;
+  height: auto;
+  padding-top: 60%;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+.checker-black-2 img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
-h1,h2,h3 { font-family: 'Bungee', cursive; }
+.checker-black-3 {
+  width: 80%;
+  height: auto;
+  align-self: start;
+  grid-column: 10 / 11;
+  grid-row: -10 / -9;
+}
+.checker-black-3 img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.checker-black-4 {
+  width: 100%;
+  height: auto;
+  grid-column: 9 / 10;
+  grid-row: -10 / -9;
+  position: relative;
+  align-self: end;
+}
+.checker-black-4 img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+/* Red Checkers */
+.checker-red-1 {
+  width: 40%;
+  height: auto;
+  padding-left: 60%;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+.checker-red-1 img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.checker-red-2 {
+  width: 50%;
+  height: auto;
+  padding-top: 75%;
+  padding-left: 30%;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+.checker-red-2 img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.checker-red-3 {
+  width: 100%;
+  height: auto;
+  grid-column: 9 / 11;
+  grid-row: -10 / -9;
+}
+.checker-red-3 img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* TYPOGRAPHY */
+h1,
+h2,
+h3 {
+  font-family: "Bungee", cursive;
+}
 
 h1 {
   font-size: 10vw;
-  font-size: clamp(2em,5vw,5vw);
+  font-size: clamp(2em, 5vw, 5vw);
   letter-spacing: 5px;
   text-transform: uppercase;
   overflow-wrap: break-word;
@@ -43,17 +171,17 @@ h1 {
 
 h2 {
   font-size: 3rem;
-  font-size: clamp(2rem,3rem,5rem);
+  font-size: clamp(2rem, 3rem, 5rem);
 }
 
 h3 {
   font-size: 2rem;
-  font-size: clamp(1.5rem,2rem,3rem);
+  font-size: clamp(1.5rem, 2rem, 3rem);
   font-style: italic;
 }
 
 p {
-  font-family: 'Sono', sans-serif;
+  font-family: "Sono", sans-serif;
   font-weight: 300;
   letter-spacing: -0.65mm;
   font-size: clamp(1.2rem, 1.5rem, 2rem);
