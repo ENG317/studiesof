@@ -54,7 +54,6 @@ body {
   grid-column: 1 / 2;
   grid-row: 2 / 2;
   background-color: #770e0e;
-  color: #ffffff;
   padding: 1rem 1rem;
   border: 2px solid #1f2531;
   border-radius: 10px;
@@ -62,6 +61,11 @@ body {
   align-self: start;
   font-size: 40px;
   box-shadow: 10px 10px 10px #1f2531;
+
+  & a {
+    color: white;
+    text-decoration: underline;
+  }
 }
 
 /* Black Checkers */
@@ -103,14 +107,13 @@ body {
   grid-column: 9 / 10;
   grid-row: -10 / -9;
   position: relative;
-  align-self: end;
+  padding-top: 150%;
 }
 .checker-black-4 img {
   width: 100%;
   height: auto;
   display: block;
 }
-
 
 /* Red Checkers */
 .checker-red-1 {
@@ -185,4 +188,150 @@ p {
   font-weight: 300;
   letter-spacing: -0.65mm;
   font-size: clamp(1.2rem, 1.5rem, 2rem);
+}
+
+/* Medium: Tablet Size */
+@media screen and (min-width: 720px) and (max-width: 1080px) {
+  .grid {
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    .checker-black-1 {
+      display: none;
+    }
+    .checker-black-2 {
+      width: 100%;
+      height: auto;
+      grid-column: 7 / 8;
+      grid-row: 2 / 2;
+      align-self: start;
+    }
+    .checker-black-3 {
+      display: none;
+    }
+    .checker-black-4 {
+      display: none;
+    }
+    .checker-red-1 {
+      width: 100%;
+      height: auto;
+      grid-column: 7 / 8;
+      grid-row: 2 / 2;
+      align-self: start;
+    }
+    .checker-red-2 {
+      display: none;
+    }
+    .checker-red-3 {
+      display: none;
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+    .image-one {
+      & img {
+        width: 100%;
+        height: auto;
+      }
+      grid-column: 1 / 5;
+      grid-row: 1 / 2;
+    }
+
+    .content-one {
+      grid-column: 6 / 10;
+      grid-row: 1 / 2;
+      align-self: center;
+      color: #ffffff;
+      background-color: #121f27;
+      text-align: center;
+      padding: 1rem 1rem;
+      border-radius: 15px;
+    }
+    #join-button {
+      grid-column: 1 / 4;
+      grid-row: 2 / 2;
+      background-color: #770e0e;
+      padding: 1rem 1rem;
+      border: 2px solid #1f2531;
+      border-radius: 10px;
+      text-align: center;
+      align-self: start;
+      font-size: 30px;
+      box-shadow: 10px 10px 10px #1f2531;
+    }
+  }
+}
+/* Small: Phone Size */
+@media screen and (min-width: 270px) and (max-width: 719px) {
+  .grid {
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    .checker-black-1 {
+      display: none;
+    }
+    .checker-black-2 {
+      width: 100%;
+      height: auto;
+      grid-column: 7 / 8;
+      grid-row: 2 / 2;
+      align-self: start;
+    }
+    .checker-black-3 {
+      display: none;
+    }
+    .checker-black-4 {
+      display: none;
+    }
+    .checker-red-1 {
+      width: 100%;
+      height: auto;
+      grid-column: 7 / 8;
+      grid-row: 2 / 2;
+      align-self: start;
+    }
+    .checker-red-2 {
+      display: none;
+    }
+    .checker-red-3 {
+      display: none;
+    }
+
+    p {
+      font-size: 13px;
+    }
+
+    .image-one {
+      & img {
+        width: 100%;
+        height: auto;
+      }
+      grid-column: 1 / 5;
+      grid-row: 1 / 2;
+    }
+
+    .content-one {
+      grid-column: 5 / 11;
+      grid-row: 1 / 2;
+      align-self: center;
+      color: #ffffff;
+      background-color: #121f27;
+      text-align: center;
+      padding: 1rem 1rem;
+      border-radius: 5px;
+    }
+    #join-button {
+      grid-column: 1 / 5;
+      grid-row: 2 / 2;
+      background-color: #770e0e;
+      padding: 1rem 1rem;
+      border: 2px solid #1f2531;
+      border-radius: 10px;
+      text-align: center;
+      align-self: start;
+      font-size: 20px;
+      box-shadow: 10px 10px 10px #1f2531;
+    }
+  }
 }

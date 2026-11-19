@@ -8,13 +8,16 @@ body {
   background-color: antiquewhite;
 }
 
+
 /* TYPOGRAPHY */
 
 .grid {
+  max-width: auto;
   display: grid;
   grid-template-columns: 0.5fr 0.5fr 1fr 1fr;
   grid-template-rows: 1fr 0.5fr 0.5fr 0.5fr 0.5fr;
 }
+
 .text_heading {
   background-color: black;
   grid-column: 1/2;
@@ -130,3 +133,5 @@ p {
   letter-spacing: -0.65mm;
   font-size: clamp(1.2rem, 1.5rem, 2rem);
 }
+
+@media screen and (min-width: 320px) {}
