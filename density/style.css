@@ -1,60 +1,103 @@
-@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Sono:wght@200;300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sono:wght@200;300;400;500;600;700;800&display=swap");
 
-html,body {
-  margin:1px;
+html,
+body {
+  margin: 1px;
   padding: 0;
+}
+
+& .media__container {
+  @media screen and (max-width: 650px) {
+    width: 100%;
+    height: 200px;
+  }
 }
 
 /* TYPOGRAPHY */
 
-h1,h2,h3 { font-family: 'Bungee', cursive; }
+h1,
+h2,
+h3 {
+  font-family: "Bungee", cursive;
+}
 
 h1 {
   font-size: 14vw;
-  font-size: clamp(2em,14vw,25vw);
+  font-size: clamp(2em, 14vw, 25vw);
   letter-spacing: 5px;
   text-transform: uppercase;
-  overflow-wrap: break-word;
   hyphens: manual;
   color: black;
 }
 
 h2 {
   font-size: 3rem;
-  font-size: clamp(2rem,3rem,5rem);
+  font-size: clamp(2rem, 3rem, 5rem);
 }
 
 h3 {
   font-size: 2rem;
-  font-size: clamp(1.5rem,2rem,3rem);
+  font-size: clamp(1.5rem, 2rem, 3rem);
   font-style: italic;
 }
 
 p {
-  font-family: 'Sono', sans-serif;
+  font-family: "Sono", sans-serif;
   font-weight: 300;
   letter-spacing: -0.65mm;
   font-size: clamp(1.2rem, 1.5rem, 2rem);
 }
 
 /*Define grid area keywords */
-.one { grid-area: a1; }
-.two { grid-area: a2; }
-.three { grid-area: a3; }
-.four { grid-area: a4; }
-.five { grid-area: a5; }
-.six { grid-area: a6; }
-.seven { grid-area: a7; }
-.eight { grid-area: a8; }
-.nine { grid-area: a9; }
-.ten { grid-area: a10; }
-.eleven { grid-area: a11; }
-.twelve { grid-area: a12; }
-.thirteen { grid-area: a13; }
-.fourteen { grid-area: a14; }
-.fifteen { grid-area: a15; }
-.sixteen { grid-area: a16; }
+.one {
+  grid-area: a1;
+}
+.two {
+  grid-area: a2;
+}
+.three {
+  grid-area: a3;
+}
+.four {
+  grid-area: a4;
+}
+.five {
+  grid-area: a5;
+}
+.six {
+  grid-area: a6;
+}
+.seven {
+  grid-area: a7;
+}
+.eight {
+  grid-area: a8;
+}
+.nine {
+  grid-area: a9;
+}
+.ten {
+  grid-area: a10;
+}
+.eleven {
+  grid-area: a11;
+}
+.twelve {
+  grid-area: a12;
+}
+.thirteen {
+  grid-area: a13;
+}
+.fourteen {
+  grid-area: a14;
+}
+.fifteen {
+  grid-area: a15;
+}
+.sixteen {
+  grid-area: a16;
+}
 
 .board {
   display: grid;
@@ -62,13 +105,22 @@ p {
   grid-template-rows: repeat(6, 3fr);
   grid-gap: 0px;
   grid-template-areas:
-  ". . . . . . . ."
-  ". . a1 a2 a3 a4 . ."
-  ". . a5 a6 a7 a8 . ."
-  ". . a9 a10 a11 a12 . ."
-  ". . a13 a14 a15 a16 . ."
-  ". . . . . . . ."
-  ;
+    ". . . . . . . ."
+    ". . a1 a2 a3 a4 . ."
+    ". . a5 a6 a7 a8 . ."
+    ". . a9 a10 a11 a12 . ."
+    ". . a13 a14 a15 a16 . ."
+    ". . . . . . . .";
 }
 
 /* Grid needs about 12 columns 9 rows lines /*
+/* object_fit__container */
+/* object-fit: cover */
+/* must be inspecting the image itself to play around with the above */
+/* 
+height: 100%
+width: 100%
+object-fit: cover
+object-position: center 
+*/
+/* flex items */
